@@ -9,6 +9,7 @@ public class Main {
 
         Driver driver = new Driver("Driver1", "Kwaku Oppong", "0987654321", "DL12345", "Toyota Camry");
         System.out.println(driver);
+        driver.displayProfile();
 
     }
 }
