@@ -1,8 +1,5 @@
 public class Rider extends AppUser implements PaymentCapable {
-    @Override
-    public String getUserType() {
-        return " Rider";
-    }
+
 
     private String preferredPaymentMethod;
     private int rideCount;
@@ -16,6 +13,11 @@ public class Rider extends AppUser implements PaymentCapable {
         super("defaultID", name, "defaultPhone");
         this.preferredPaymentMethod = "defaultPayment";
         this.rideCount = 0;
+    }
+
+    @Override
+    public String getUserType() {
+        return " Rider";
     }
 
     @Override

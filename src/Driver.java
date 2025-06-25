@@ -1,8 +1,5 @@
 public class Driver extends AppUser{
-    @Override
-    public String getUserType() {
-        return "Driver";
-    }
+
     private String licenseNumber;
     private String vehicleInfo;
 
@@ -16,6 +13,12 @@ public class Driver extends AppUser{
         this.licenseNumber = "defaultLicense";
         this.vehicleInfo = "defaultVehicle";
     }
+
+    @Override
+    public String getUserType() {
+        return "Driver";
+    }
+
     public String getLicenseNumber() {
         return licenseNumber;
     }
